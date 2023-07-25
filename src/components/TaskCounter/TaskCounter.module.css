@@ -7,12 +7,19 @@
   width: 100%;
 }
 
+/* MAX-WIDTH = TELAS MENORES QUE ALGUMA RESOLUÇÃO */
+/* MIN-WIDTH = TELAS MAIORES QUE ALGUMA RESOLUÇÃO */
+
 .headerTask {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 46rem;
   gap: 1.5rem;
+
+  @media screen and (max-width:500px) {
+    width: auto;
+  }
 }
 
 .totalTasks {

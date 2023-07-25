@@ -17,6 +17,10 @@
   padding: 64px 24px;
   width: 46rem;
 
+  @media screen and (max-width:500px) {
+    width: auto;
+  }
+
 }
 
 .contentTask img {

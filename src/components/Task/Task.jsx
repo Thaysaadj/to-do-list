@@ -23,22 +23,19 @@ export function Task() {
   }
 
   function handleConcludedTask() {
-    setTaskConcluded(13)
-    console.log("set", setTaskConcluded)
-    // let concludedTask = 0
-    // tasks.map((task) => {
-    //   if (task.isConcluded === true) {
-    //     concludedTask++
-    //   }
-    // })
-    // console.log("aqui",concludedTask)
-    // setTaskConcluded(concludedTask)
+    let concludedTask = 0
+    tasks.filter((task) => {
+      if (task.isConcluded === true) {
+        concludedTask++
+      }
+    })
+    console.log("aqui",concludedTask)
+    setTaskConcluded(concludedTask)
   }
 
   useEffect(() => {
     handleTotalTasks()
     handleConcludedTask()
-    console.log(tasks)
   }, [tasks])
 
 

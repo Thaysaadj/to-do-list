@@ -1,8 +1,9 @@
 import styles from './TaskCounter.module.css'
 
-export function TaskCounter({ totalTasks, tasksConcluded}) {
+export function TaskCounter({ totalTasks, taskConcluded}) {
 
-  console.log("tasks concluidas", tasksConcluded)
+  const counterCompletedTask = `${taskConcluded} de ${totalTasks} `
+  console.log("tasks concluidas", taskConcluded)
 
   return (
     <div>
@@ -14,7 +15,7 @@ export function TaskCounter({ totalTasks, tasksConcluded}) {
 
           <p className={styles.completedCounter}>
             Concluídas
-            <span className={styles.completedNumber}>{tasksConcluded} de {totalTasks}</span>
+            <span className={styles.completedNumber}>{counterCompletedTask}</span>
           </p>
         </header>
       </div>
