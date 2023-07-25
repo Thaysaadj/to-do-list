@@ -1,0 +1,52 @@
+.containerHeaderTask {
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.headerTask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 46rem;
+  gap: 1.5rem;
+}
+
+.totalTasks {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.totalNumber {
+  color: var(--gray-200, #D9D9D9);
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 999px;
+  padding: 2px 8px;
+  background: var(--gray-400, #333);
+  margin-left: 0.5rem;
+}
+
+.completedCounter {
+  color: var(--purple);
+  font-weight: 700;
+}
+
+.completedNumber {
+  color: var(--gray-200, #D9D9D9);
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 999px;
+  padding: 2px 8px;
+  background: var(--gray-400, #333);
+  margin-left: 0.5rem
+}
