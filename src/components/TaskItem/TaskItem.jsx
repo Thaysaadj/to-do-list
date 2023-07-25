@@ -7,10 +7,8 @@ export function TaskItem({ handleCheck, task, onDeleteTask }) {
     handleCheck(task.id)
   }
 
-  console.log("task", task)
 
   function handleDeleteTask() {
-    console.log("Apagou", task)
     onDeleteTask(task)
   }
 

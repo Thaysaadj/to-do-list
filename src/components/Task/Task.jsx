@@ -29,7 +29,6 @@ export function Task() {
         concludedTask++
       }
     })
-    console.log("aqui",concludedTask)
     setTaskConcluded(concludedTask)
   }
 
